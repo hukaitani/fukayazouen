@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>仕事依頼 - 深谷造園</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            深谷造園🌴
+        </div>
+
+        <div class="tel">
+    <a href="tel:090-6467-2127">TEL：090-6467-2127</a>
+</div>
+    </header>
+
+    <nav>
+        <a href="index.html">ホーム</a>
+        <a href="irai.html">仕事依頼</a>
+    </nav>
+
+    <main class="request-page">
+
+        <h1>仕事依頼</h1>
+
+        <p class="request-intro">
+            剪定・伐採・草刈り・庭づくりなど<br>
+            お庭に関することならお気軽にご相談ください。
+        </p>
+
+  <form action="https://formspree.io/f/xjybgnyd" method="POST">
+    <input type="hidden" name="_next" value="thanks.html">
+    <label>
+        お名前 <span class="required">必須</span>
+    </label>
+    <input
+        type="text"
+        name="name"
+        placeholder="お名前を入力してください"
+        required
+    >
+
+    <label>
+        電話番号 <span class="required">必須</span>
+    </label>
+    <input
+        type="tel"
+        name="phone"
+        placeholder="電話番号を入力してください"
+        required
+    >
+
+    <label>
+        メールアドレス
+    </label>
+    <input
+        type="email"
+        name="email"
+        placeholder="メールアドレスを入力してください"
+    >
+
+    <label>
+        ご依頼内容 <span class="required">必須</span>
+    </label>
+    <textarea
+        name="message"
+        placeholder="剪定、伐採、草刈りなど、ご依頼内容を入力してください"
+        required
+    ></textarea>
+
+    <button type="submit">依頼内容を送信</button>
+
+</form>

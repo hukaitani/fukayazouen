@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #222;
+}
+
+/* ヘッダー */
+header {
+    height: 110px;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 50px;
+}
+
+.logo {
+    font-size: 45px;
+    font-weight: bold;
+    color: green;
+}
+
+.tel {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* メニュー */
+nav {
+    height: 70px;
+    background-color: #52634d;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+/* メイン */
+.hero {
+    min-height: 700px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: white;
+}
+
+/* 左側 */
+.hero-text {
+    width: 45%;
+    padding: 50px 40px 50px 80px;
+}
+
+.catch {
+    font-size: 25px;
+    color: #52634d;
+    margin-bottom: 20px;
+}
+
+.hero-text h1 {
+    font-size: 75px;
+    color: #263d25;
+    margin-bottom: 30px;
+}
+
+.hero-text > p:not(.catch) {
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+
+/* 仕事依頼ボタン */
+.request {
+    display: inline-block;
+
+    background-color: #52634d;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 18px 40px;
+    border-radius: 5px;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.request:hover {
+    background-color: #344532;
+}
+
+/* 右側の写真 */
+.hero-photo {
+    width: 55%;
+    height: 700px;
+    overflow: hidden;
+}
+
+.hero-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media (max-width: 600px) {
+
+    header {
+        height: 80px;
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .tel {
+        font-size: 14px;
+    }
+
+    nav {
+        height: 55px;
+        gap: 30px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-text {
+        width: 100%;
+        padding: 50px 25px;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 50px;
+    }
+
+    .catch {
+        font-size: 20px;
+    }
+
+    .hero-text > p:not(.catch) {
+        font-size: 16px;
+    }
+
+    .hero-photo {
+        width: 100%;
+        height: 400px;
+    }
+
+}
+/* 仕事依頼ページ */
+
+.request-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 70px 30px;
+}
+
+.request-page h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #263d25;
+    margin-bottom: 25px;
+}
+
+.request-intro {
+    text-align: center;
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #263d25;
+}
+
+form input,
+form textarea {
+    font-size: 16px;
+    padding: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 180px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #52634d;
+    color: white;
+    border: none;
+    padding: 18px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #344532;
+}.bottom-photo {
+    width: 100%;
+    text-align: center;
+    padding: 60px 0;
+    background-color: white;
+}
+
+.bottom-photo img {
+    width: 70%;
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+}@media (max-width: 600px) {
+
+    .bottom-photo {
+        padding: 40px 20px;
+    }
+
+    .bottom-photo img {
+        width: 100%;
+    }
+
+}.required {
+    color: white;
+    background-color: #c44;
+    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 3px;
+    margin-left: 5px;
+}.tel a {
+    color: black;
+    text-decoration: none;
+}
+
+.tel a:hover {
+    color: #52634d;
+}.thanks {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.thanks h1 {
+    color: #263d25;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.thanks p {
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+
+.thanks a {
+    display: inline-block;
+    background-color: #52634d;
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 5px;
+}
