@@ -293,3 +293,68 @@ form button:hover {
     padding: 15px 35px;
     border-radius: 5px;
 }
+/* 施工事例 */
+
+.jirei-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 30px;
+}
+
+.jirei-page h1 {
+    text-align: center;
+    font-size: 55px;
+    color: #263d25;
+    margin-bottom: 20px;
+}
+
+.jirei-intro {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+.jirei-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.jirei-item {
+    background-color: #f5f5f5;
+    padding-bottom: 25px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.jirei-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.jirei-item h2 {
+    color: #263d25;
+    font-size: 25px;
+    margin: 20px;
+}
+
+.jirei-item p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0 20px;
+}@media (max-width: 600px) {
+
+    .jirei-list {
+        grid-template-columns: 1fr;
+    }
+
+    .jirei-page h1 {
+        font-size: 40px;
+    }
+
+    .jirei-item img {
+        height: 250px;
+    }
+
+}
