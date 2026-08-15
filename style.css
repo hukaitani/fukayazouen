@@ -357,4 +357,11 @@ form button:hover {
         height: 250px;
     }
 
+}.area-title {
+    color: #263d25;
+}.area-title {
+    color: #263d25;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
