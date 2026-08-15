@@ -364,4 +364,16 @@ form button:hover {
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 15px;
+}.jirei-title {
+    width: 500px;
+    margin: 0 auto 20px;
+
+    color: #263d25;
+    font-size: 55px;
+    font-weight: bold;
+
+    border: 2px solid #52634d;
+    padding: 10px 30px;
+
+    text-align: center;
 }
