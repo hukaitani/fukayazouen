@@ -376,4 +376,26 @@ form button:hover {
     padding: 10px 30px;
 
     text-align: center;
+}.contact-info {
+    background-color: #dce6d8;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-info h1 {
+    color: #263d25;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.contact-text {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-text p {
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 20px;
 }
